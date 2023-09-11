@@ -53,6 +53,7 @@ $color-main: #1a3d94;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-y: scroll;
   color: $color-main;
 }
 
@@ -205,6 +206,8 @@ button.react-calendar__month-view__days__day:not(
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 35vw;
+  overflow-y: scroll;
 
   gap: 5px;
   .card {
