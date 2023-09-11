@@ -25,6 +25,15 @@
   color: #1a3d94;
 }
 
+.appWrapper {
+  max-width: 800px;
+  margin: 2vh auto;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: space-around;
+}
+
 p {
   color: #1a3d94;
   font-weight: 700;

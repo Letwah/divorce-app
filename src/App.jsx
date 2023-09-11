@@ -23,34 +23,39 @@ function App() {
   catFilter();
   return (
     <>
-      <Nav setPageState={setPageState} />
-      {fakePageState === 1 ? (
-        <CalendarComp setPageState={setPageState} setCurrentId={setCurrentId} />
-      ) : fakePageState === 3 ? (
-        <SearchPage currentId={currentId} />
-      ) : fakePageState === 4 ? (
-        <ToDo currentId={currentId} />
-      ) : (
-        <></>
-      )}
+      <div className="appWrapper">
+        <Nav setPageState={setPageState} />
+        {fakePageState === 1 ? (
+          <CalendarComp
+            setPageState={setPageState}
+            setCurrentId={setCurrentId}
+          />
+        ) : fakePageState === 3 ? (
+          <SearchPage currentId={currentId} />
+        ) : fakePageState === 4 ? (
+          <ToDo currentId={currentId} />
+        ) : (
+          <></>
+        )}
 
-      <div className="bottom-nav">
-        <button
-          onClick={() => {
-            setPageState(4);
-          }}
-        >
-          <p>dates list</p>
-          <img src={event} alt="" />
-        </button>
-        <button
-          onClick={() => {
-            setPageState(3);
-          }}
-        >
-          <p>gift ideas</p>
-          <img src={shopping} alt="" />
-        </button>
+        <div className="bottom-nav">
+          <button
+            onClick={() => {
+              setPageState(4);
+            }}
+          >
+            <p>dates list</p>
+            <img src={event} alt="" />
+          </button>
+          <button
+            onClick={() => {
+              setPageState(3);
+            }}
+          >
+            <p>gift ideas</p>
+            <img src={shopping} alt="" />
+          </button>
+        </div>
       </div>
     </>
   );

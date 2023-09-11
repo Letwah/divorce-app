@@ -56,6 +56,15 @@ $color-main: #1a3d94;
   color: $color-main;
 }
 
+.appWrapper {
+  max-width: 800px;
+  margin: 2vh auto;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: space-around;
+}
+
 p {
   color: $color-main;
   font-weight: 700;
